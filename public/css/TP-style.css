@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*
+* author: 姚吉
+* date:2016/9/18
+*/
+/*
+* author: 姚吉
+* date:2016/11/2
+*/
+/*
+* author: 姚吉
+* date:2016/11/2
+*/
+* {
+  outline: none;
+  font-family: SimHei;
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  -webkit-touch-callout: none !important; }
+
+a {
+  color: #000; }
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  border: none; }
+
+.freezeBody{
+    position: fixed;
+    overflow:hidden;
+}
+
+.clearfix {
+  clear: both; }
+
+/*
+* author: 姚吉
+* date:2016/11/2
+*/
+.indexContainer {
+  position: relative;
+  z-index: 10; }
+  .indexContainer .header {
+    height: 43rem;
+    background-image: url("../imgs/headerBg.jpg");
+    background-size: cover;
+    position: relative; }
+    .indexContainer .header .countDown {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #403535;
+      position: absolute;
+      top: 16.1rem;
+      font-family: Microsoft YaHei;
+      left: 0;
+      width: 100%; }
+      .indexContainer .header .countDown div.row {
+        line-height: 2.5rem; }
+        .indexContainer .header .countDown div.row span.timeBlock {
+          color: #f63c49;
+          border: 2px solid #f63c49;
+          padding: 3px 5px; }
+    .indexContainer .header .leftTopBtnBox {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding-left: 0.75rem; }
+      .indexContainer .header .leftTopBtnBox .btn {
+        text-align: center;
+        width: 8rem;
+        height: 2rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+        color: #cf333e;
+        border: 2px solid #cf333e;
+        font-size: 1rem;
+        border-radius: 10rem;
+        position: relative; }
+        .indexContainer .header .leftTopBtnBox .btn .tri {
+          position: absolute;
+          right: 0.7rem;
+          top: 0.7rem;
+          width: 0;
+          height: 0;
+          border-top: 0.3rem solid transparent;
+          border-left: 0.6rem solid red;
+          border-bottom: 0.3rem solid transparent; }
+  .indexContainer .main {
+    background-image: url("../imgs/snowBg.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    padding: 0 4%;
+    position: relative;
+    padding-top: 11.9rem;
+    padding-bottom: 2.5rem; }
+    .indexContainer .main .recommendToday {
+      position: absolute;
+      background-color: #fff;
+      height: 28.5rem;
+      top: -18.7rem;
+      width: 92%;
+      left: 4%;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      padding: 1.4rem 1.3rem; }
+      .indexContainer .main .recommendToday .headerTitleBox {
+        height: 1.75rem;
+        position: relative;
+        line-height: 1.75rem;
+        text-align: center; }
+        .indexContainer .main .recommendToday .headerTitleBox .redSideLine {
+          width: 50%;
+          height: 50%;
+          position: absolute;
+          top: 0;
+          left: 25%;
+          border-bottom: 1px solid #d10e1c; }
+        .indexContainer .main .recommendToday .headerTitleBox .title {
+          position: relative;
+          z-index: 100;
+          font-size: 1.5rem;
+          color: #d10e1c;
+          font-weight: bold;
+          background-color: #fff; }
+        .indexContainer .main .recommendToday .headerTitleBox .title::before {
+          content: "·";
+          font-size: 1.5rem;
+          color: #d10e1c;
+          font-weight: bold; }
+        .indexContainer .main .recommendToday .headerTitleBox .title::after {
+          content: "·";
+          font-size: 1.5rem;
+          color: #d10e1c;
+          font-weight: bold; }
+      .indexContainer .main .recommendToday .bigImg {
+        margin-top: 1.1rem;
+        height: 14.9rem;
+        background-size: cover;
+        background-image: url(../imgs/product.png); }
+      .indexContainer .main .recommendToday .bigTitleRow {
+        margin-top: 1.1rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        height: 2rem; }
+        .indexContainer .main .recommendToday .bigTitleRow .title {
+          float: left;
+          color: #000;
+          max-width: 60%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+        .indexContainer .main .recommendToday .bigTitleRow .price {
+          float: right;
+          color: #f64e62;
+          font-weight: bold;
+          max-width: 40%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+      .indexContainer .main .recommendToday .subTitleRow {
+        line-height: 1.1rem;
+        font-size: 1rem;
+        color: #7e7e7e;
+        height: 1.1rem;
+        margin-top: 0.3rem; }
+        .indexContainer .main .recommendToday .subTitleRow .desc {
+          float: left;
+          border-right: 1px solid #7e7e7e;
+          padding-right: 0.3rem;
+          margin-right: 0.3rem; }
+        .indexContainer .main .recommendToday .subTitleRow .totalNum {
+          float: left; }
+        .indexContainer .main .recommendToday .subTitleRow .originPrice {
+          float: right;
+          text-decoration: line-through; }
+      .indexContainer .main .recommendToday .productStatus {
+        background-color: #f64e62;
+        width: 8.9rem;
+        height: 2.8rem;
+        text-align: center;
+        line-height: 2.8rem;
+        font-size: 1.5rem;
+        color: #fff;
+        float: right;
+        margin-top: 1.1rem;
+        border-radius: 0.5rem; }
+      .indexContainer .main .recommendToday .silk {
+        width: 7rem;
+        position: absolute;
+        left: -0.5rem;
+        top: -0.1rem; }
+    .indexContainer .main .productListContainer {
+      height: 28.5rem;
+      background-color: #fff; }
+      .indexContainer .main .productListContainer .navBox {
+        height: 3.6rem;
+        padding: 0.8rem 0; }
+        .indexContainer .main .productListContainer .navBox .navBlock {
+          width: 50%;
+          float: left;
+          height: 2rem;
+          text-align: center;
+          line-height: 2rem;
+          font-size: 1.5rem;
+          color: #8d8d8d;
+          font-weight: bold; }
+        .indexContainer .main .productListContainer .navBox .rightBorder {
+          border-right: 1px solid #d3d3d3; }
+        .indexContainer .main .productListContainer .navBox .selected {
+          color: #d10e1c; }
+
+.shareWinGiftBox {
+  width: 7rem;
+  position: fixed;
+  top: 32rem;
+  right: 0;
+  z-index: 100; }
+
+/*# sourceMappingURL=style.css.map */

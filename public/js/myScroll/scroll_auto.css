@@ -1,0 +1,370 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*单选滚动插件样式 start*/
+.scroll-roller{
+    width: 100%;
+    height: 108px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    background: #fff;
+}
+
+.scroll-roller > .ul-list{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.scroll-roller > .ul-list > li{
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-align:center;
+    color: #212121;
+    list-style: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.scroll-roller > .ul-list > li.fill-height{
+    height: 36px;
+}
+
+.scroll-roller > .ul-list > li.active{
+    color: #00bcd4;
+}
+
+.scroll-roller > .mask{
+    position:absolute;
+    z-index:3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+    background: -webkit-gradient(linear,left bottom,left top,from(#fff),color-stop(0.52,rgba(245,245,245,0)),color-stop(0.48,rgba(245,245,245,0)),to(#fff));
+    background: -webkit-linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+    background: -moz-linear-gradient(#fff 0,rgba(245,245,245,0) 52%,rgba(245,245,245,0) 48%,#fff 100%);
+}
+
+.scroll-roller > .lines{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 36px;
+    margin-top: -18px;
+    border-top: #dfdfdf 1px solid;
+    border-bottom: #dfdfdf 1px solid;
+}
+
+.scroll-control{
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    background: #f6f6f6;
+    clear: both;
+}
+
+.scroll-control:after{
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.scroll-control > .scroll-title{
+    text-align: center;
+}
+
+.scroll-control > a{
+    padding: 0 1rem;
+    cursor: default;
+}
+
+.scroll-control > .cancel{
+    float: left;
+}
+
+.scroll-control > .sure{
+    float: right;
+}
+
+/*单选滚动插件样式 end*/
+.scroll-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background-color: #fff;*/
+}
+
+.scroll-wrap > .scroll-bd{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    /*min-height: 100%;*/
+    -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+/*上拉下拉组件样式*/
+.scroll-wrap > .scroll-bd > [class^='scroll-roller-']{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
+.scroll-wrap > .scroll-bd > .scroll-roller-top{
+    top: -2rem;
+}
+
+.scroll-wrap > .scroll-bd > .scroll-roller-down{
+    bottom: -2rem;
+}
+
+/*遮罩层*/
+.scroll-curtain{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0);
+}
+
+.scroll-loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999;
+    width: 8rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin-left: -4rem;
+    margin-top: -2.5rem;
+    background: #000;
+    border-radius: 4px;
+    opacity: 0.7;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+
+.scroll-loading > span{
+    color: #fff;
+}
+
+/*黑色遮罩层*/
+.scroll-black-curtain{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/*日期控件样式*/
+
+.scroll-roller > .ul-list > li.special-day{
+    display: none;
+}
+
+.clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.scroll-style-foot{
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.scroll-body-hide{
+    height: 100%;
+    overflow: hidden !important;
+}
+
+
+.scroll-wrap > .scroll-bd > .MyMedicalLifeText{
+    position: absolute;
+    left: 0;
+    top: -5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.scroll-roller-top .slice{
+    position: relative;
+    display: inline-block;
+}
+
+
+.scroll-roller-top .slice::before{
+    content: "";
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #b5d7eb;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.15rem;
+    border-radius: 50%;
+}
+
+.scroll-roller-top .slice::after{
+    content: "";
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #b5d7eb;
+    position: absolute;
+    right: 0.2rem;
+    top: 0.15rem;
+    border-radius: 50%;
+}
+
+
+.scroll-roller-top [data-loader='circle']{
+    margin-top: 0.8rem;
+    width: 1.6rem;
+    height: 0.8rem; 
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border: 0.2rem solid #b5d7eb;
+    border-top: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.scroll-roller-top .loading[data-loader='circle']
+{
+    margin-top: 0rem;
+    width: 1.6rem;
+    height: 1.6rem;
+
+    -webkit-animation: circle infinite .75s linear;
+       -moz-animation: circle infinite .75s linear;
+         -o-animation: circle infinite .75s linear;
+            animation: circle infinite .75s linear;
+
+    border: 0.2rem solid #b5d7eb;
+    border-top-color: transparent;
+    border-radius: 100%;
+}
+@-webkit-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-moz-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-o-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+             -o-transform: rotate(0);
+                transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}

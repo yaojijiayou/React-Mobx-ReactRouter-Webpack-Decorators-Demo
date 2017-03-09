@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+author:姚吉
+*/
+.cloud-body{
+   
+   h1{
+   		font-size: 3rem;
+   		color: red;
+   }
+
+   h2{
+   		font-size: 2rem;
+   		color: black;
+   }
+
+   .time-component{
+   	 margin-top: 1rem;
+   	 border:1px solid black;
+       margin-bottom: 1rem;
+   }
+
+   .btn{
+   		font-size: 2rem;
+   		color: blue;
+   }
+
+   .jumpBtn{
+      border:1px solid blue;
+      float: right;
+      font-size: 3rem;
+      color:blue;
+      
+   }
+}
