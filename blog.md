@@ -5,9 +5,9 @@
 
 介绍Mobx的文章，百度一下还是挺多的，虽然本质上很多就是翻译老外的文章...最推荐看的是官方的[gitbook](https://mobx.js.org/index.html)。在此我就不造轮子再长篇大论地重新介绍一番了。
 
-虽然谈理论的文章很多，但是如何真正使用，特别是搭配连ES6也不支持的decorators特性，好像还是没那么简单。
+虽然谈理论的文章很多，但都是这里一段代码、那里一个例子。把示例代码拼一起，一跑起来，错误报到西伯利亚。所以如何真正使用，特别是搭配连ES6也不支持的decorators特性，好像还是没那么简单。
 
-所以我写了一个demo([github地址](https://github.com/yaojijiayou/React-Mobx-ReactRouter-Webpack-Decorators-Demo))。这个demo用到了react、Mobx、react router、webpack、express4。看了此react、Mobx、react router、webpack、express4分分钟一步到位学会!
+因此我写了一个demo([github地址](https://github.com/yaojijiayou/React-Mobx-ReactRouter-Webpack-Decorators-Demo))。这个demo用到了react、Mobx、react router、webpack、express4。看了此react、Mobx、react router、webpack、express分分钟一步到位全学会!
 
 具体如何使用、如何读源码，请参看readme。
 
