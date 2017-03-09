@@ -27,8 +27,8 @@ class TimerComponent extends React.Component {
         	click me to trigger tick action
         </h2>
 
-        <h2 className="btn" onClick={()=>this.props.timerIns.fakeAjax()}>
-          fake ajax action
+        <h2 className="btn" onClick={()=>this.props.timerIns.fakeAsyncAction()}>
+          fake async action
         </h2>
       </div>
 

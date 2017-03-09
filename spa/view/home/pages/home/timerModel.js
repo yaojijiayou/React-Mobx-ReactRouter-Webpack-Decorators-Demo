@@ -20,7 +20,7 @@ export default class Timer {
         this.start = Date.now();
     }
 
-    fakeAjax(){
+    fakeAsyncAction(){
     	setTimeout(()=>this.tick(),1000);
     }
 
