@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 9:
+/***/ 11:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9,7 +9,7 @@ webpackJsonp([1],{
 	    value: true
 	});
 
-	var _react = __webpack_require__(4);
+	var _react = __webpack_require__(3);
 
 	var _react2 = _interopRequireDefault(_react);
 

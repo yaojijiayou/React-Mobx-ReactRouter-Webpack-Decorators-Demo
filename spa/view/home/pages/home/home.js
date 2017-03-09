@@ -38,9 +38,9 @@ var Home = React.createClass({
                  <h1>This is Home Page!</h1>
                  
                  <TimeComponent timerIns={TimerIns}></TimeComponent>
-                 <TimeComponent timerIns={TimerIns}></TimeComponent>
 
                  <span className="jumpBtn" onClick={this.handleClick}>Go to other page</span>
+                 
               </div>
         )
     }
