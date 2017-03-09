@@ -15,7 +15,7 @@ A demo based on React+Mobx+ReactRouter+Webpack+Decorators+Express4
 
 # Tips
 
-###  if you just wanna to learn Mobx, focus on files contained in  /spa/view/home/pages/home/
+> * if you just wanna to learn Mobx, focus on files contained in  /spa/view/home/pages/home/
 
 
 # How to run
