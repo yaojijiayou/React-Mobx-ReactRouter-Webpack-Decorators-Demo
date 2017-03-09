@@ -1,15 +1,17 @@
 # 基于react+Mobx(使用decorators)的demo
 
 
-前几日一篇文章[Mobx 思想的实现原理，及与 Redux 对比](https://zhuanlan.zhihu.com/p/25585910)吸引了很多前端开发的目光，使饱受react组件通讯之苦、同时有对redux函数式编程方式相对陌生的人们看到了一丝新的曙光。
+前几日一篇文章[Mobx 思想的实现原理，及与 Redux 对比](https://zhuanlan.zhihu.com/p/25585910)吸引了很多前端开发的目光，使饱受react组件通讯之苦、同时又对redux函数式编程方式雨里雾里的人们看到了一丝新的曙光。
 
-介绍Mobx的文章，百度一下还是挺多的，虽然很多本质上就是翻译老外的文章...最推荐看的是官方的[gitbook](https://mobx.js.org/index.html)。在此我就不造轮子，再长篇大论地重新介绍一番了。
+介绍Mobx的文章，百度一下还是挺多的，虽然本质上很多就是翻译老外的文章...最推荐看的是官方的[gitbook](https://mobx.js.org/index.html)。在此我就不造轮子再长篇大论地重新介绍一番了。
 
-虽然谈理论的文章很多，但是如何真正使用，特别是搭配连ES6也不支持的decorators功能，好像还是不那么简单。
+虽然谈理论的文章很多，但是如何真正使用，特别是搭配连ES6也不支持的decorators特性，好像还是没那么简单。
 
-所以我写了一个demo([github地址](https://github.com/yaojijiayou/React-Mobx-ReactRouter-Webpack-Decorators-Demo))。这个demo用到了react、Mobx、react router、webpack、express4。如何使用，请参加readme。
+所以我写了一个demo([github地址](https://github.com/yaojijiayou/React-Mobx-ReactRouter-Webpack-Decorators-Demo))。这个demo用到了react、Mobx、react router、webpack、express4。看了此react、Mobx、react router、webpack、express4分分钟一步到位学会!
 
-除上文之外，我想补充几点写demo时使我感到困惑的点:
+具体如何使用、如何读源码，请参看readme。
+
+除此之外，我想补充几点写demo时使我感到困惑的点:
 
 ### 1 如何使用decorators
 
