@@ -17,12 +17,12 @@
 
 decorators是未来的js特性，如果有用到babel，那么需要安装transform-decorators-legacy插件
 
-、、、
+```
 npm i --save-dev babel-plugin-transform-decorators-legacy
-、、、
+```
 
 同时需要配置.babelrc/webpack配置文件如下：
-、、、
+```
 {
   "presets": [
     "es2015",
@@ -31,13 +31,13 @@ npm i --save-dev babel-plugin-transform-decorators-legacy
   ],
   "plugins": ["transform-decorators-legacy"]
 }
-、、、
+```
 需要注意的是transform-decorators-legacy需要放在插件列表的首位。
 
 如果webpack打包的时候报与“stage-1”相关的错误，那么需要执行:
-、、、
+```
 npm install babel-preset-stage-1
-、、、
+```
 
 
 ### 2 如何理解Derivations
