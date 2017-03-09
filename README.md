@@ -21,6 +21,7 @@ A demo based on React+Mobx+ReactRouter+Webpack+Decorators+Express4
 # How to run
 
 > * npm install
+> * webpack -w
 > * npm start
 > * open 'http://localhost:3000/spa/'
 
